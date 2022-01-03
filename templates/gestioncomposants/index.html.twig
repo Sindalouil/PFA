@@ -1,0 +1,137 @@
+{% extends 'baseuser.html.twig' %}
+
+{% block title %}hello AdmindashController!{% endblock %}
+
+{% block body %}
+	<div class="main-panel">
+		<div class="content">
+				<div class="page-inner">
+					<div class="page-header">
+			<div class="card">
+								<div class="card-header">
+									<div class="d-flex align-items-center">
+										<h4 class="card-title">Mon Materiel</h4>
+										
+										<button class="btn btn-primary btn-round ml-auto" data-toggle="modal" data-target="#addRowModal">
+											<a  href="{{path('demandemateriel')}}">
+											<i class="fa fa-plus"></i>
+											
+										<p>	Demander materiels</p>
+										</a>	
+										</button>
+										
+									</div>
+								</div>
+								<div class="card-body">
+									<!-- Modal -->
+									<div class="modal fade" id="addRowModal" tabindex="-1" role="dialog" aria-hidden="true">
+										<div class="modal-dialog" role="document">
+											<div class="modal-content">
+												
+												
+												
+											</div>
+										</div>
+									</div>
+
+									<div class="table-responsive">
+										<div id="add-row_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4">
+										<div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="add-row_length">
+										</div></div>
+										<div class="col-sm-12 col-md-6">
+										<div id="add-row_filter" class="dataTables_filter">
+										<label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="add-row">
+										</label></div></div></div><div class="row"><div class="col-sm-12">
+										<table id="add-row" class="display table table-striped table-hover dataTable" role="grid" aria-describedby="add-row_info">
+											<thead>
+												<tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="add-row" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 226.953px;">Id_materiels</th><th class="sorting" tabindex="0" aria-controls="add-row" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 345.906px;">Nom </th><th class="sorting" tabindex="0" aria-controls="add-row" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 188.328px;">statut</th><th style="width: 107.812px;" class="sorting" tabindex="0" aria-controls="add-row" rowspan="1" colspan="1" aria-label="Action: activate to sort column ascending">Action</th></tr>
+											</thead>
+											<tfoot>
+												
+											</tfoot>
+											<tbody>
+												
+											
+											<tr role="row" class="odd">
+													<td class="sorting_1">id1</td>
+													<td>E1</td>
+													<td>R1</td>
+													<td>
+														<div class="form-button-action">
+															<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Déclarer probleme">
+																<a  href="{{path('declareproblem')}}">
+																<i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+																
+                                                            </button>
+                                                         
+                                                            
+															
+														</div>
+													</td>
+												</tr><tr role="row" class="even">
+													<td class="sorting_1">Id2</td>
+													<td>E2</td>
+													<td>R2</td>
+													<td>
+														<div class="form-button-action">
+															<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Déclarer probleme">
+															<a  href="{{path('declareproblem')}}">
+																<i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+																
+                                                            </button>
+														</div>
+													</td>
+												</tr><tr role="row" class="odd">
+													<td class="sorting_1">Id3</td>
+													<td>E3</td>
+													<td>R3</td>
+													<td>
+														<div class="form-button-action">
+															<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Déclarer probleme">
+																<a  href="{{path('declareproblem')}}">
+																<i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+																
+                                                            </button>
+														</div>
+													</td>
+												</tr><tr role="row" class="even">
+													<td class="sorting_1">Id4</td>
+													<td>E4</td>
+													<td>R4</td>
+													<td>
+														<div class="form-button-action">
+														<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Déclarer probleme">
+																<a  href="{{path('declareproblem')}}">
+																<i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+																
+                                                            </button>
+														</div>
+													</td>
+												</tr><tr role="row" class="odd">
+													<td class="sorting_1">ID5</td>
+													<td>E5</td>
+													<td>R5</td>
+													<td>
+														<div class="form-button-action">
+															<button type="button" data-toggle="tooltip" title="" class="btn btn-link btn-primary btn-lg" data-original-title="Déclarer probleme">
+																<a  href="{{path('declareproblem')}}">
+																<i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+																
+                                                            </button>
+														</div>
+													</td>
+												</tr></tbody>
+										</table></div></div>
+									</div>
+								</div>
+							</div>
+			
+		</div>
+		</div>
+		</div>
+		</div>
+
+		
+	</div>
+	
+{%endblock%}
